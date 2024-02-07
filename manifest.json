@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "wk-context-hider",
+    "version": "1.0",
+    "description": "Hides the english answers in the context sentences until revealed.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.wanikani.com/subject-lessons/*"],
+            "js": ["index.js"]
+        }
+    ]
+}
+
+    
